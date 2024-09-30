@@ -1,11 +1,15 @@
 **AI vs Human-Written Text Classification**
+
 **Overview**
+
 This project investigates the differences between AI-generated and human-written abstracts using text analysis and machine learning (ML) models. The primary goal is to develop a classifier that can accurately distinguish between these two types of content, even in short-form text—an area where many current detectors struggle.
 
 **Problem Statement**
+
 The rise of Text Generative Models (TGMs) has resulted in the proliferation of AI-generated content, which raises concerns regarding its misuse, especially for false information and unethical reviews. Detecting AI-generated text reliably is a challenge that the project addresses by exploring text characteristics like length, sentiment, and key phrases.
 
 **Key Components**
+
 Data Collection and Preprocessing
 The dataset comprises 4000+ scientific abstracts, both human-written and AI-generated. To prepare the data, standard text preprocessing techniques were applied, such as:
 
@@ -29,6 +33,7 @@ Random Forests
 Each model's performance was evaluated using metrics like accuracy, precision, recall, and F1-score. Techniques like cross-validation were employed to prevent overfitting and to improve generalizability.
 
 **Insights Gained**
+
 Text Length
 The analysis found that AI-generated abstracts tend to be shorter than human-written ones. This provided an opportunity to fine-tune the models specifically for short-form content detection, which is often a weakness of existing AI detectors.
 
@@ -45,6 +50,7 @@ AI-generated: "paper", "results"
 This shows that human authors tend to use more specific and detailed terminology, while AI abstracts focus on more generic words.
 
 **Model Performance**
+
 Among the models tested, Logistic Regression and Random Forests demonstrated the best performance:
 
 Logistic Regression: Provided a high level of interpretability, making it easier to analyze the terms contributing to classification decisions.
@@ -58,9 +64,11 @@ Decision Tree: 95.81%
 Support Vector Machines: 54.0% (SVM struggled with this dataset)
 
 **Conclusion**
+
 This project successfully developed a robust AI-text detector that can distinguish between human-written and AI-generated abstracts with high accuracy. By leveraging insights from text length, sentiment, and word patterns, the classifier offers significant potential for use in content moderation, plagiarism detection, and ensuring academic integrity.
 
 **Future Work**
+
 Further improvements can be made by:
 
 Exploring more advanced deep learning techniques like transformer models.
